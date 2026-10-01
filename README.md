@@ -6,21 +6,33 @@ Learning Web3 through practical tools and open-source contributions. I develop t
 
 | Project | What it does | Links |
 | --- | --- | --- |
-| **Gas Planner** | Plans operation gas budgets with exact wei arithmetic, reserve breakdowns, Ethereum / Base / Optimism comparison and CSV / JSON export. | [Live demo](https://irb888.github.io/ethereum-gas-calculator/) · [Source](https://github.com/IRB888/ethereum-gas-calculator) |
-| **Sale Planner** | Organizes research, readiness checks, deadlines and manual payment records, with separate currency totals, calendar export and backups. | [Live demo](https://irb888.github.io/token-sale-checklist/) · [Source](https://github.com/IRB888/token-sale-checklist) |
+| **Gas Planner** | Plans gas budgets with exact wei arithmetic, per-operation execution costs, separate reserves, Ethereum / Base / Optimism comparison and CSV / JSON export. | [Live app](https://irb888.github.io/ethereum-gas-calculator/) · [Source](https://github.com/IRB888/ethereum-gas-calculator) · [32-second walkthrough](https://x.com/bit_ihor/status/2105661837975183668) |
+| **Sale Planner** | Organizes research, readiness checks, deadlines and manual payment records, with separate currency totals, workspace calendar export and backups. | [Live app](https://irb888.github.io/token-sale-checklist/) · [Source](https://github.com/IRB888/token-sale-checklist) · [32-second walkthrough](https://x.com/bit_ihor/status/2105664057978056922) |
 
-Both apps support English and Russian, work without a wallet connection, and store plans in your browser. Gas Planner contacts public market-data services only when you request a refresh. Sale Planner makes no external requests.
+Both apps support English and Russian, work without a wallet connection, and store plans in your browser. Gas Planner contacts public market-data services only when you request a refresh. Sale Planner makes no external requests. Videos use fictional examples and illustrate the workflow.
+
+## Latest shipped work · 1 October 2026
+
+- **Gas Planner v2.4:** expandable execution costs for each operation, including counts; other fees and reserve remain separate. [19 passing tests](https://github.com/IRB888/ethereum-gas-calculator/actions/runs/36876577457).
+- **Sale Planner v2.4:** export all saved upcoming deadlines from open, non-archived projects in one UTC calendar file, without the ten-item agenda limit. Calendar exports are snapshots, not live synchronization. [26 passing tests](https://github.com/IRB888/token-sale-checklist/actions/runs/36876667004).
 
 ## Help test a real task
 
-- **Gas Planner:** add a 21,000-gas ETH transfer, set 10 gwei and a 25% reserve. For that single operation, the Ethereum budget should be 0.0002625 ETH. Unknown L2 fees are shown as incomplete estimates. [Report a problem](https://github.com/IRB888/ethereum-gas-calculator/issues/new?template=bug_report.yml).
-- **Sale Planner:** create a fictional project with a future deadline, save it, reload, and export its CSV record. Archive it and check that it leaves the upcoming-deadline list while remaining in the CSV. [Report a problem](https://github.com/IRB888/token-sale-checklist/issues/new?template=bug_report.yml).
+I am looking for 3–5 volunteers for a short usability test. Choose one task, use fictional data, and tell me where you got stuck.
 
-Please include your browser, device, steps, expected result and actual result. Use fictional data; do not upload financial backups, private keys or identity documents.
+1. **Gas budget:** leave one ETH transfer at 21,000 gas, set 10 gwei and a 25% reserve. The Ethereum budget should be 0.0002625 ETH. Expand the per-operation breakdown. Is the difference between execution and reserve clear?
+2. **Deadline planning:** create a fictional project with a future deadline, save and reload. Export all upcoming dates as .ics. Archive the project and check that it leaves the agenda while remaining in the CSV records. Was the export easy to find?
+3. **Mobile usability:** repeat either task on a phone. Report any clipped labels, hard-to-tap controls or confusing steps.
 
-## Open-source contribution
+Send feedback through the [Gas Planner bug form](https://github.com/IRB888/ethereum-gas-calculator/issues/new?template=bug_report.yml) or [Sale Planner bug form](https://github.com/IRB888/token-sale-checklist/issues/new?template=bug_report.yml), or reply to the walkthrough on X. Include browser/device, steps, expected result and actual result. Do not upload financial backups, private keys or identity documents.
 
-[ethereum.org PR #19361](https://github.com/ethereum/ethereum-org-website/pull/19361) proposes preventing clipboard controls from submitting surrounding forms. The linked PR shows the current review and merge status.
+## Proposed open-source contributions
+
+These proposals were open at the last check on 1 October 2026; the links show their current review and merge status.
+
+- [ethereum.org #19361](https://github.com/ethereum/ethereum-org-website/pull/19361): prevent clipboard controls from submitting surrounding forms.
+- [Library Management System #12](https://github.com/miteshanshu/Library-Management-System---RBAC/pull/12): include author matches in global search, with regression tests.
+- [Legion protocol contracts #30](https://github.com/Legion-Team/legion-protocol-contracts/pull/30): make Quick Start commands copyable and enter the cloned directory before running Forge.
 
 ## Scope
 
