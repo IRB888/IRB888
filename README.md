@@ -11,10 +11,10 @@ Learning Web3 through practical tools and open-source contributions. I develop t
 
 Both apps support English and Russian, work without a wallet connection, and store plans in your browser. Gas Planner contacts public market-data services only when you request a refresh. Sale Planner makes no external requests. Videos use fictional examples and illustrate the workflow.
 
-## Latest shipped work · 1 October 2026
+## Latest shipped work · 2 October 2026
 
-- **Gas Planner v2.4:** expandable execution costs for each operation, including counts; other fees and reserve remain separate. [19 passing tests](https://github.com/IRB888/ethereum-gas-calculator/actions/runs/36876577457).
-- **Sale Planner v2.4:** export all saved upcoming deadlines from open, non-archived projects in one UTC calendar file, without the ten-item agenda limit. Calendar exports are snapshots, not live synchronization. [26 passing tests](https://github.com/IRB888/token-sale-checklist/actions/runs/36876667004).
+- **Gas Planner v2.4.1:** keyboard focus stays with edited operations; numbered accessible input labels. Also includes expandable execution costs for each operation, including counts; other fees and reserve remain separate. [19 passing tests](https://github.com/IRB888/ethereum-gas-calculator/actions/runs/36876577457).
+- **Sale Planner v2.5.1:** manual token/network comparison, keyboard focus fixes and a single-column phone editor. Also includes export all saved upcoming deadlines from open, non-archived projects in one UTC calendar file, without the ten-item agenda limit. Calendar exports are snapshots, not live synchronization. [30 passing tests](https://github.com/IRB888/token-sale-checklist/actions/runs/36918247174).
 
 ## Help test a real task
 
@@ -26,12 +26,15 @@ I am looking for 3–5 volunteers for a short usability test. Choose one task, u
 
 Send feedback through the [Gas Planner bug form](https://github.com/IRB888/ethereum-gas-calculator/issues/new?template=bug_report.yml) or [Sale Planner bug form](https://github.com/IRB888/token-sale-checklist/issues/new?template=bug_report.yml), or reply to the walkthrough on X. Include browser/device, steps, expected result and actual result. Do not upload financial backups, private keys or identity documents.
 
-## Proposed open-source contributions
+## Merged open-source contribution
 
-These proposals were open at the last check on 1 October 2026; the links show their current review and merge status.
+- [Library Management System #12](https://github.com/miteshanshu/Library-Management-System---RBAC/pull/12), merged 2 October 2026: fixed missing author matches in global search and added regression tests. The maintainer independently tested all three roles, access restrictions, and the five regression cases before merging.
+
+## Open proposals
+
+These proposals were open at the last check on 2 October 2026; the links show their current review and merge status.
 
 - [ethereum.org #19361](https://github.com/ethereum/ethereum-org-website/pull/19361): prevent clipboard controls from submitting surrounding forms.
-- [Library Management System #12](https://github.com/miteshanshu/Library-Management-System---RBAC/pull/12): include author matches in global search, with regression tests.
 - [Legion protocol contracts #30](https://github.com/Legion-Team/legion-protocol-contracts/pull/30): make Quick Start commands copyable and enter the cloned directory before running Forge.
 
 ## Scope
